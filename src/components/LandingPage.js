@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="intro">
-        <h1>Welcome to Seatac Disc Golf</h1>
+        <h1>Seatac Disc Golf Association</h1>
         <button className="explore-button" onClick={() => navigate('/home')}>
           Click to Explore
         </button>
