@@ -1,0 +1,103 @@
+/* LandingPage.css */
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20vh;
+  height: 100vh;
+  background-image: url('../assets/images/hole-1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: fadeIn 2s ease-out;
+}
+
+/* Adding an overlay to darken the background */
+.landing-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.intro {
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  animation: slideDown 1.5s ease-out;
+  z-index: 2;
+  position: relative;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  color: #ff6347; /* Orange color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add text shadow */
+}
+
+.explore-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  margin-bottom: 1rem; /* Add space below the button for the image */
+}
+
+.explore-button:hover {
+  transform: translateY(-5px);
+  background-color: #ff6347;
+  color: white;
+}
+
+/* Styling for the small image */
+.small-image {
+  width: 100%; /* Make the image the same width as the button */
+  max-width: 200px; /* Optional: Limit the maximum width if needed */
+  border-radius: 50%; /* Make the image circular */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure the image is treated as a block-level element */
+  transition: transform 0.3s ease-in-out;
+}
+
+.small-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .explore-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
