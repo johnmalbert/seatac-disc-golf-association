@@ -60,9 +60,10 @@
 
 /* Styling for the small image */
 .small-image {
+  background-color: gray;
+  padding: 5px;
   width: 100%; /* Make the image the same width as the button */
-  max-width: 200px; /* Optional: Limit the maximum width if needed */
-  border-radius: 50%; /* Make the image circular */
+  max-width: 300px; /* Optional: Limit the maximum width if needed */
   margin: 0 auto; /* Center the image */
   display: block; /* Ensure the image is treated as a block-level element */
   transition: transform 0.3s ease-in-out;

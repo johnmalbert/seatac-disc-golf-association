@@ -24,7 +24,8 @@ function HomePage() {
     <div className="home-page">
       {/* Revolving Image Display */}
       <section className="course-highlight">
-        <h1>Seatac Disc Golf Course</h1>
+        <h1>Chuck Mintz Disc Golf</h1>
+        <h3>Est. 2017 • If at first you don't succeed, redefine success.</h3>
         <div className="revolving-image">
           <img src={images[currentImageIndex]} alt="Seatac Disc Golf Course" />
         </div>

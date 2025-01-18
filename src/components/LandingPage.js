@@ -8,11 +8,11 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="intro">
-        <h1>Seatac Disc Golf Association</h1>
+        <h1>Chuck Mintz Disc Golf</h1>
         <button className="explore-button" onClick={() => navigate('/home')}>
           Click to Explore
         </button>
-        <img src="/images/cgm.jpg" alt="Disc Golf Icon" className="small-image" />
+        <img src="/images/cmdg.jpg" alt="Disc Golf Icon" className="small-image" />
       </div>
     </div>
   );
